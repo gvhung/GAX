@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using GAX.Core.Models.Base;
 
 namespace GAX.Core.Models
 {

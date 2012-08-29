@@ -9,12 +9,17 @@ using GAX.Core.Models;
 namespace GAX.Core.Business
 {
   public class SiteManager : ISiteManager
-    {
-    GaxEntities _db = new GaxEntities();
+  {
+    private readonly GaxEntities _db = new GaxEntities();
 
     public IEnumerable<SiteSection> GetActiveSections()
     {
       return _db.SiteSections.Where(s => s.Enabled);
+    }
+
+    public void Dispose()
+    {
+      _db.Dispose();
     }
   }
 }

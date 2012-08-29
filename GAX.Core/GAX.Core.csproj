@@ -56,7 +56,8 @@
     <Compile Include="Data\GaxEntities.cs" />
     <Compile Include="Data\SampleData.cs" />
     <Compile Include="Models\AccountModels.cs" />
-    <Compile Include="Models\BaseModel.cs" />
+    <Compile Include="Models\Base\Address.cs" />
+    <Compile Include="Models\Base\BaseModel.cs" />
     <Compile Include="Models\Product.cs" />
     <Compile Include="Models\SiteSection.cs" />
     <Compile Include="Models\Supplier.cs" />

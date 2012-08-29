@@ -6,7 +6,7 @@ using GAX.Core.Models;
 
 namespace GAX.Core.Business.Interfaces
 {
-  public interface ISiteManager
+  public interface ISiteManager : IDisposable
   {
     IEnumerable<SiteSection> GetActiveSections();
   }

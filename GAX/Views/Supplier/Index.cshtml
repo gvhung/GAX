@@ -12,13 +12,16 @@
 <table>
     <tr>
         <th>
-            Name
+            Nome
         </th>
         <th>
-            DateInserted
+            Descrizione
         </th>
         <th>
-            DateUpdeted
+            Email
+        </th>
+        <th>
+            WebAddress
         </th>
         <th></th>
     </tr>
@@ -29,10 +32,13 @@
             @Html.DisplayFor(modelItem => item.Name)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.DateInserted)
+            @Html.DisplayFor(modelItem => item.ShortDescription)
         </td>
         <td>
-            @Html.DisplayFor(modelItem => item.DateUpdeted)
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WebAddress)
         </td>
         <td>
             @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |

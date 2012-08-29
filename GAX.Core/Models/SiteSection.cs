@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Text;
+using GAX.Core.Models.Base;
 
 namespace GAX.Core.Models
 {

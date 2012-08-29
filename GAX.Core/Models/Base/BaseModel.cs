@@ -1,6 +1,7 @@
 ﻿using System;
+using System.ComponentModel.DataAnnotations;
 
-namespace GAX.Core.Models
+namespace GAX.Core.Models.Base
 {
   public class BaseModel
   {
@@ -10,7 +11,10 @@ namespace GAX.Core.Models
       DateUpdeted = DateTime.Now;
     }
 
+    [ScaffoldColumn(false)]
     public DateTime DateInserted { get; set; }
+
+    [ScaffoldColumn(false)]
     public DateTime DateUpdeted { get; set; }
   }
 }

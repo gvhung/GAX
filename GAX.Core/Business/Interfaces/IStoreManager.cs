@@ -1,10 +1,15 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using GAX.Core.Models;
 
 namespace GAX.Core.Business.Interfaces
 {
-  public interface IStoreManager
+  public interface IStoreManager : IDisposable
   {
-    IEnumerable<Supplier> GetAllSuppliers();
+    IEnumerable<Supplier> GetSuppliers();
+    Supplier GetSupplierById(int id);
+    int AddSupplier(Supplier supplier);
+    int UpdateSupplier(Supplier supplier);
+    int DeleteSupplier(int id);
   }
 }
