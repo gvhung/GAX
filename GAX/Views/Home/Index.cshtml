@@ -1,0 +1,16 @@
+﻿@model IEnumerable<GAX.Core.Models.SiteSection>
+@{
+    ViewBag.Title = "GAX Main";
+}
+<h2>@ViewBag.Message</h2>
+<p>
+    <ul>
+        @foreach (var s in Model)
+        {
+          <li><a href="@Url.Action(s.ActionName, s.ControllerName)">
+                <span>@s.Name</span>
+              </a>
+          </li>
+        }
+    </ul>
+</p>
