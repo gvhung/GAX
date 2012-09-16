@@ -1,0 +1,23 @@
+﻿@model GAX.Core.Models.Product
+
+@{
+    ViewBag.Title = "Dettagli";
+}
+
+<h2>Dettagli</h2>
+
+<fieldset>
+    <legend>Prodotto</legend>
+
+    <div class="display-label">
+        @Html.LabelFor(model => model.Name):
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Name)
+    </div>
+
+</fieldset>
+<p>
+    @Html.ActionLink("Modifica", "Edit", new { id=Model.ProductId }) |
+    @Html.ActionLink("Torna alla lista", "Index")
+</p>

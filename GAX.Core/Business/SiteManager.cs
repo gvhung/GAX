@@ -14,7 +14,7 @@ namespace GAX.Core.Business
 
     public IEnumerable<SiteSection> GetActiveSections()
     {
-      return _db.SiteSections.Where(s => s.Enabled);
+      return _db.SiteSections.Where(s => s.IsActive);
     }
 
     public void Dispose()

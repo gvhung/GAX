@@ -1,27 +1,27 @@
 ﻿@model IEnumerable<GAX.Core.Models.Supplier>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Elenco";
 }
 
-<h2>Index</h2>
+<h2>Elenco</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Crea nuovo", "Create")
 </p>
 <table>
     <tr>
         <th>
-            Nome
+            @Html.LabelFor(modelItem => modelItem.First().Name)
         </th>
         <th>
-            Descrizione
+            @Html.LabelFor(modelItem => modelItem.First().ShortDescription)
         </th>
         <th>
-            Email
+            @Html.LabelFor(modelItem => modelItem.First().Email)
         </th>
         <th>
-            WebAddress
+            @Html.LabelFor(modelItem => modelItem.First().WebAddress)
         </th>
         <th></th>
     </tr>
@@ -41,9 +41,9 @@
             @Html.DisplayFor(modelItem => item.WebAddress)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            @Html.ActionLink("Modifica", "Edit", new { id=item.SupplierId }) |
+            @Html.ActionLink("Dettagli", "Details", new { id = item.SupplierId }) |
+            @Html.ActionLink("Cancella", "Delete", new { id = item.SupplierId })
         </td>
     </tr>
 }

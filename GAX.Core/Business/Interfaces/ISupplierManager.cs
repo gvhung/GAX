@@ -4,7 +4,7 @@ using GAX.Core.Models;
 
 namespace GAX.Core.Business.Interfaces
 {
-  public interface IStoreManager : IDisposable
+  public interface ISupplierManager : IDisposable
   {
     IEnumerable<Supplier> GetSuppliers();
     Supplier GetSupplierById(int id);

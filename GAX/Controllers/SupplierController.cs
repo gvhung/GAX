@@ -13,9 +13,9 @@ namespace GAX.Controllers
 {
   public class SupplierController : Controller
   {
-    private readonly IStoreManager _store;
+    private readonly ISupplierManager _store;
 
-    public SupplierController(IStoreManager store)
+    public SupplierController(ISupplierManager store)
     {
       _store = store;
     }
@@ -89,7 +89,7 @@ namespace GAX.Controllers
 
     public ActionResult Delete(int id)
     {
-      Supplier supplier = _store.GetSupplierById(id);
+      var supplier = _store.GetSupplierById(id);
       return View(supplier);
     }
 

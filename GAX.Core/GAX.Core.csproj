@@ -49,10 +49,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Business\ProductManager.cs" />
+    <Compile Include="Business\Interfaces\IProductManager.cs" />
     <Compile Include="Business\Interfaces\ISiteManager.cs" />
-    <Compile Include="Business\SiteManager.cs" />
-    <Compile Include="Business\StoreManager.cs" />
-    <Compile Include="Business\Interfaces\IStoreManager.cs" />
+    <Compile Include="Business\SiteManager.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Business\SupplierManager.cs" />
+    <Compile Include="Business\Interfaces\ISupplierManager.cs" />
     <Compile Include="Data\GaxEntities.cs" />
     <Compile Include="Data\SampleData.cs" />
     <Compile Include="Models\AccountModels.cs" />

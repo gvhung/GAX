@@ -59,7 +59,8 @@ namespace GAX.App_Start
     {
       // Load BusinessLogic plugin
       kernel.Bind<ISiteManager>().To<SiteManager>();
-      kernel.Bind<IStoreManager>().To<StoreManager>();
+      kernel.Bind<ISupplierManager>().To<SupplierManager>();
+      kernel.Bind<IProductManager>().To<ProductManager>();
     }
   }
 }

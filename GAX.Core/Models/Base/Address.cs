@@ -17,10 +17,10 @@ namespace GAX.Core.Models.Base
     public string Telephone { get; set; }
     [DisplayName("FAX")]
     public string Fax { get; set; }
-    [DisplayName("E-mail")]
+    [DisplayName("eMail")]
     [RegularExpression(@"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}", ErrorMessage = "Email non valida!")]
     public string Email { get; set; }
-    [DisplayName("Indirizzo web")]
+    [DisplayName("Web")]
     public string WebAddress { get; set; }
   }
 }

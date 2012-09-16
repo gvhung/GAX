@@ -301,12 +301,16 @@ div#title {
 
 /* Styles for editor and display helpers
 ----------------------------------------------------------*/
-.display-label, 
+.display-label,
 .editor-label {
     margin: 1em 0 0 0;
 }
 
-.display-field, 
+.display-field {
+    margin: 0.5em 0 0 0;
+    /*display: table-column;*/
+}
+
 .editor-field {
     margin: 0.5em 0 0 0;
 }

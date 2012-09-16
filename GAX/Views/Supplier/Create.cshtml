@@ -1,7 +1,7 @@
 ﻿@model GAX.Core.Models.Supplier
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Nuovo";
 }
 
 <h2>Create</h2>
@@ -12,15 +12,7 @@
 @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
     <fieldset>
-        <legend>Supplier</legend>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.IsActive)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.IsActive)
-            @Html.ValidationMessageFor(model => model.IsActive)
-        </div>
+        <legend>Fornitore</legend>
 
         <div class="editor-label">
             @Html.LabelFor(model => model.Name)
@@ -127,11 +119,11 @@
         </div>
 
         <p>
-            <input type="submit" value="Create" />
+            <input type="submit" value="Inserisci" />
         </p>
     </fieldset>
 }
 
 <div>
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Torna alla lista", "Index")
 </div>

@@ -1,9 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+# Visual Web Developer Express 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAX", "GAX\GAX.csproj", "{43D8CC32-51E9-450F-BA3C-C5DA66E55F02}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAX.Tests", "GAX.Tests\GAX.Tests.csproj", "{35ACBEA3-C7A8-42F3-8342-810AC33A3654}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GAX.Core", "GAX.Core\GAX.Core.csproj", "{5A41F9AA-E91A-45BF-A86A-D654D5D9448A}"
 EndProject
@@ -17,10 +15,6 @@ Global
 		{43D8CC32-51E9-450F-BA3C-C5DA66E55F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43D8CC32-51E9-450F-BA3C-C5DA66E55F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43D8CC32-51E9-450F-BA3C-C5DA66E55F02}.Release|Any CPU.Build.0 = Release|Any CPU
-		{35ACBEA3-C7A8-42F3-8342-810AC33A3654}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{35ACBEA3-C7A8-42F3-8342-810AC33A3654}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{35ACBEA3-C7A8-42F3-8342-810AC33A3654}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{35ACBEA3-C7A8-42F3-8342-810AC33A3654}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5A41F9AA-E91A-45BF-A86A-D654D5D9448A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{5A41F9AA-E91A-45BF-A86A-D654D5D9448A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5A41F9AA-E91A-45BF-A86A-D654D5D9448A}.Release|Any CPU.ActiveCfg = Release|Any CPU

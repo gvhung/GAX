@@ -1,85 +1,106 @@
 ﻿@model GAX.Core.Models.Supplier
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Dettagli";
 }
 
-<h2>Details</h2>
+<h2>Dettagli</h2>
 
 <fieldset>
-    <legend>Supplier</legend>
+    <legend>Fornitore</legend>
 
-    <div class="display-label">IsActive</div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.IsActive)
+    <div class="display-label">
+        @Html.LabelFor(model => model.Name):
     </div>
-
-    <div class="display-label">Name</div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Name)
     </div>
 
-    <div class="display-label">ShortDescription</div>
+    <div class="display-label">
+        @Html.LabelFor(model => model.ShortDescription)
+    </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.ShortDescription)
     </div>
 
-    <div class="display-label">FiscalCode</div>
+    <div class="display-label">
+        @Html.LabelFor(model => model.FiscalCode)
+    </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.FiscalCode)
     </div>
 
-    <div class="display-label">VatNumber</div>
+    <div class="display-label">
+        @Html.LabelFor(model => model.VatNumber)
+    </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.VatNumber)
     </div>
 
-    <div class="display-label">Note</div>
+    <div class="display-label">
+        @Html.LabelFor(model => model.Note)
+    </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Note)
     </div>
 
-    <div class="display-label">Street</div>
+    <div class="display-label">
+        @Html.LabelFor(model => model.Street)
+    </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Street)
     </div>
 
-    <div class="display-label">Cap</div>
+    <div class="display-label">
+        @Html.LabelFor(model => model.Cap)
+    </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Cap)
     </div>
 
-    <div class="display-label">City</div>
+    <div class="display-label">
+        @Html.LabelFor(model => model.City)
+    </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.City)
     </div>
 
-    <div class="display-label">District</div>
+    <div class="display-label">
+        @Html.LabelFor(model => model.District)
+    </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.District)
     </div>
 
-    <div class="display-label">Telephone</div>
+    <div class="display-label">
+        @Html.LabelFor(model => model.Telephone)
+    </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Telephone)
     </div>
 
-    <div class="display-label">Fax</div>
+    <div class="display-label">
+        @Html.LabelFor(model => model.Fax)
+    </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Fax)
     </div>
 
-    <div class="display-label">Email</div>
+    <div class="display-label">
+        @Html.LabelFor(model => model.Email)
+    </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.Email)
     </div>
 
-    <div class="display-label">WebAddress</div>
+    <div class="display-label">
+        @Html.LabelFor(model => model.WebAddress)
+    </div>
     <div class="display-field">
         @Html.DisplayFor(model => model.WebAddress)
     </div>
 </fieldset>
 <p>
-    @Html.ActionLink("Edit", "Edit", new { id=Model.ID }) |
-    @Html.ActionLink("Back to List", "Index")
+    @Html.ActionLink("Modifica", "Edit", new { id=Model.SupplierId }) |
+    @Html.ActionLink("Torna alla lista", "Index")
 </p>

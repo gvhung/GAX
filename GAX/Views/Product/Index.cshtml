@@ -1,0 +1,33 @@
+﻿@model IEnumerable<GAX.Core.Models.Product>
+
+@{
+    ViewBag.Title = "Elenco";
+}
+
+<h2>Elenco</h2>
+
+<p>
+    @Html.ActionLink("Crea nuovo", "Create")
+</p>
+<table>
+    <tr>
+        <th>
+            @Html.LabelFor(modelItem => modelItem.First().Name)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.ActionLink("Modifica", "Edit", new { id=item.ProductId }) |
+            @Html.ActionLink("Dettagli", "Details", new { id = item.ProductId }) |
+            @Html.ActionLink("Cancella", "Delete", new { id = item.ProductId })
+        </td>
+    </tr>
+}
+
+</table>
